@@ -79,10 +79,9 @@
     --text-success: var(--green-800);
     --text-warning: var(--yellow-800);
     --text-info: var(--blue-800);
-    --text-brand: var(--default-white);
+    
     --bg-surface-primary: var(--default-white);
     --bg-surface-secondary: var(--gray-050);
-    --bg--fill-brand: var(--blue-950);
     --bg-fill-brand-secondary: var(--yellow-500);
     --bg-fill-accent: var(--pink-500);
     --bg-fill-disabled: var(--gray-200);
@@ -94,6 +93,7 @@
     --bg-fill-info: var(--blue-500);
     --bg-fill-white: var(--default-white);
     --bg-fill-black: var(--default-black);
+
     --border-primary: var(--gray-300);
     --border-focus: var(--blue-800);
     --border-error: var(--red-800);
@@ -101,6 +101,10 @@
     --border-warning: var(--yellow-800);
     --border-info: var(--blue-800);
     --border-accent: var(--pink-800);
+    /* Brand Colors */
+    --bg-fill-brand: #103E9F;
+    --text-brand: #FFFFFF;
+    --border-brand: #103E9F;
 }
 
 html {
@@ -220,3 +224,32 @@ body {
     line-height: 1rem;
 }
 /* End Typography */
+
+/* Buttons */
+.btn {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    padding: 1rem 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    white-space: nowrap !important;
+}
+
+.btn ion-icon {
+    font-size: 1.25rem;
+}
+
+.primary-btn {
+    --bs-btn-color: var(--text-brand);
+    --bs-btn-bg: var(--bg-fill-brand);
+    --bs-btn-border-color: var(--border-brand);
+    
+}
