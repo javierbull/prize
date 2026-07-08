@@ -1,4 +1,5 @@
 :root {
+    /* primary-colors */
     --gray-050: #F7F8F8;
     --gray-100: #EEEEF0;
     --gray-200: #D9DADE;
@@ -67,11 +68,44 @@
     --pink-950: #580015;
     --default-white: #FFFFFF;
     --default-black: #000000;
+    /* semantic-colors */
+    --text-primary: var(--gray-950);
+    --text-secondary: var(--gray-700);
+    --text-placeholder: var(--gray-500);
+    --text-disabled: var(--gray-400);
+    --text-link: var(--blue-700);
+    --text-link-secondary: var(--gray-950);
+    --text-error: var(--red-800);
+    --text-success: var(--green-800);
+    --text-warning: var(--yellow-800);
+    --text-info: var(--blue-800);
+    --text-brand: var(--default-white);
+    --bg-surface-primary: var(--default-white);3
+    --bg-surface-secondary: var(--gray-050);
+    --bg--fill-brand: var(--blue-950);
+    --bg-fill-brand-secondary: var(--yellow-500);
+    --bg-fill-accent: var(--pink-500);
+    --bg-fill-disabled: var(--gray-200);
+    --bg-fill-input-primary: var(--default-white);
+    --bg-fill-input-secondary: var(--gray-200);
+    --bg-fill-danger: var(--red-500);
+    --bg-fill-success: var(--green-500);
+    --bg-fill-warning: var(--yellow-500);
+    --bg-fill-info: var(--blue-500);
+    --bg-fill-white: var(--default-white);
+    --bg-fill-black: var(--default-black);
+    --border-primary: var(--gray-300);
+    --border-focus: var(--blue-800);
+    --border-error: var(--red-800);
+    --border-success: var(--green-800);
+    --border-warning: var(--yellow-800);
+    --border-info: var(--blue-800);
+    --border-accent: var(--pink-800);
 }
 
 body {
     font-family: "Poppins", sans-serif;
     font-optical-sizing: auto;
-    color: var(--gray7);
+    color: var(--text-error);
     font-weight: 400;
 }
