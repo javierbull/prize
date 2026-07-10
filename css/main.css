@@ -95,12 +95,14 @@
     --bg-fill-black: var(--default-black);
 
     --border-primary: var(--gray-300);
-    --border-focus: var(--blue-800);
+    --border-focus: var(--gray-900);
     --border-error: var(--red-800);
     --border-success: var(--green-800);
     --border-warning: var(--yellow-800);
     --border-info: var(--blue-800);
     --border-accent: var(--pink-800);
+
+    --btn-focus-shadow: 0, 0, 0;
     /* Brand Colors */
     --bg-fill-brand: #103E9F;
     --text-brand: #FFFFFF;
@@ -254,7 +256,23 @@ body {
     --bs-btn-hover-color: var(--text-brand);
     --bs-btn-hover-bg: var(--bg-fill-brand);
     --bs-btn-hover-border-color: var(--bg-fill-brand);
-    --bs-btn-focus-shadow-rgb: 12, 82, 255;
+    --bs-btn-focus-shadow-rgb: var(--btn-focus-shadow);
+    --bs-btn-active-color: var(--text-brand);
+    --bs-btn-active-bg: var(--bg-fill-brand);
+    --bs-btn-active-border-color: var(--bg-fill-brand);
+    --bs-btn-disabled-color: var(--text-disabled);
+    --bs-btn-disabled-bg: var(--bg-fill-disabled);
+    --bs-btn-disabled-border-color: var(--border-primary);
+}
+
+.outline-btn {
+    --bs-btn-color: var(--text-primary);
+    --bs-btn-bg: var(--bg-fill-white);
+    --bs-btn-border-color: var(--border-primary);
+    --bs-btn-hover-color: var(--text-primary);
+    --bs-btn-hover-bg: var(--bg-fill-white);
+    --bs-btn-hover-border-color: var(--border-focus);
+    --bs-btn-focus-shadow-rgb: var(--btn-focus-shadow);
     --bs-btn-active-color: var(--text-brand);
     --bs-btn-active-bg: var(--bg-fill-brand);
     --bs-btn-active-border-color: var(--bg-fill-brand);
