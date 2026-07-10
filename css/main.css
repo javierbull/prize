@@ -72,7 +72,7 @@
     --text-primary: var(--gray-950);
     --text-secondary: var(--gray-700);
     --text-placeholder: var(--gray-500);
-    --text-disabled: var(--gray-400);
+    --text-disabled: var(--gray-600);
     --text-link: var(--blue-700);
     --text-link-secondary: var(--gray-950);
     --text-error: var(--red-800);
@@ -250,6 +250,15 @@ body {
 .primary-btn {
     --bs-btn-color: var(--text-brand);
     --bs-btn-bg: var(--bg-fill-brand);
-    --bs-btn-border-color: var(--border-brand);
-    
+    --bs-btn-border-color: var(--bg-fill-brand);
+    --bs-btn-hover-color: var(--text-brand);
+    --bs-btn-hover-bg: var(--bg-fill-brand);
+    --bs-btn-hover-border-color: var(--bg-fill-brand);
+    --bs-btn-focus-shadow-rgb: 12, 82, 255;
+    --bs-btn-active-color: var(--text-brand);
+    --bs-btn-active-bg: var(--bg-fill-brand);
+    --bs-btn-active-border-color: var(--bg-fill-brand);
+    --bs-btn-disabled-color: var(--text-disabled);
+    --bs-btn-disabled-bg: var(--bg-fill-disabled);
+    --bs-btn-disabled-border-color: var(--border-primary);
 }
