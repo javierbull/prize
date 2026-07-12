@@ -72,7 +72,7 @@
     --text-primary: var(--gray-950);
     --text-secondary: var(--gray-700);
     --text-placeholder: var(--gray-500);
-    --text-disabled: var(--gray-600);
+    --text-disabled: var(--gray-400);
     --text-link: var(--blue-700);
     --text-link-hover: var(--blue-900);
     --text-link-secondary: var(--gray-950);
@@ -284,33 +284,23 @@ body {
 }
 
 .link-primary {
-    --bs-btn-font-weight: 400;
-    --bs-btn-color: var(--text-link);
-    --bs-btn-bg: transparent;
-    --bs-btn-border-color: transparent;
-    --bs-btn-hover-color: var(--text-link-hover);
-    --bs-btn-hover-border-color: transparent;
-    --bs-btn-active-color: var(--text-link);
-    --bs-btn-active-border-color: transparent;
-    --bs-btn-disabled-color: var(--text-disabled);
-    --bs-btn-disabled-border-color: transparent;
-    --bs-btn-box-shadow: 0 0 0 #000;
-    --bs-btn-focus-shadow-rgb: 16, 62, 159;
-    text-decoration: none;
+    color: var(--text-link);
+    
+}
+
+.link-primary:hover {
+    color: var(--text-link-hover);
+    
 }
 
 .link-secondary {
-    --bs-btn-font-weight: 400;
-    --bs-btn-color: var(--text-link-secondary);
-    --bs-btn-bg: transparent;
-    --bs-btn-border-color: transparent;
-    --bs-btn-hover-color: var(--text-link--secondary-hover);
-    --bs-btn-hover-border-color: transparent;
-    --bs-btn-active-color: var(--text-link-secondary);
-    --bs-btn-active-border-color: transparent;
-    --bs-btn-disabled-color: var(--text-disabled);
-    --bs-btn-disabled-border-color: transparent;
-    --bs-btn-box-shadow: 0 0 0 #000;
-    --bs-btn-focus-shadow-rgb: 16, 62, 159;
-    text-decoration: none;
+    color: var(--text-link-secondary) !important;
+    
 }
+
+.link-disabled {
+    color: var(--text-disabled) !important;
+    pointer-events: none;
+    cursor: default;
+}
+
