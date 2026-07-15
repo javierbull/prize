@@ -16,35 +16,50 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <main>
         <div class="container-login">
             <div class="container-login--img">
             </div>
             <div class="container-login--form">
+                <img src="images/logos/logo-rectangular.png" alt="Logo de empresa" class="logo-login">
+                <!-- <img src="images/logos/logo-cuadrado.png" alt="Logo de empresa" class="logo-login"> -->
                 <h1 class="headline_1">Iniciar sesión</h1>
                 <form class="form-login">
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1"
-                            aria-describedby="emailHelp" placeholder="Ingresa tu correo electrónico">
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label for="validationCustom04" class="form-label">State</label>
+                            <select class="form-select" id="validationCustom04" required="">
+                                <option>DNI</option>
+                                <option>CE</option>
+                                <option>Pasaporte</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="form-group col">
+                            <label for="exampleInputEmail1" class="form-label">Número</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
                     </div>
-                    <div class="mb-3">
+
+                    <div class="form-group">
                         <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1"
-                            placeholder="Ingresa tu contraseña">
+                        <input type="password" class="form-control" id="exampleInputPassword1">
                     </div>
                     <button type="submit" class="btn primary-btn">Iniciar sesión</button>
                 </form>
-            </div>    
+            </div>
         </div>
 
         <footer>
 
         </footer>
     </main>
-    
-    
+
+
     <!-- Js-files -->
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
