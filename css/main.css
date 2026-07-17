@@ -76,7 +76,7 @@
     --text-link: var(--blue-700);
     --text-link-hover: var(--blue-900);
     --text-link-secondary: var(--gray-950);
-    --text-link--secondary-hover: var(--blue-900);
+    --text-link--secondary-hover: var(--blue-700);
     --text-error: var(--red-800);
     --text-success: var(--green-800);
     --text-warning: var(--yellow-800);
@@ -284,22 +284,24 @@ body {
     --bs-btn-disabled-border-color: var(--border-primary);
 }
 
-.link-primary {
+.primary-link {
     color: var(--text-link);
-
 }
 
-.link-primary:hover {
+.primary-link:hover {
     color: var(--text-link-hover);
 
 }
 
-.link-secondary {
+.secondary-link {
     color: var(--text-link-secondary) !important;
-
 }
 
-.link-disabled {
+.secondary-link:hover {
+    color: var(--text-link--secondary-hover) !important;
+}
+
+.disabled-link {
     color: var(--text-disabled) !important;
     pointer-events: none;
     cursor: default;
