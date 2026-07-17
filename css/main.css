@@ -103,6 +103,7 @@
     --border-warning: var(--yellow-800);
     --border-info: var(--blue-800);
     --border-accent: var(--pink-800);
+    --border-black: var(--default-black);
     --btn-focus-shadow: 0, 0, 0;
 
     /* Brand Colors */
@@ -477,3 +478,13 @@ body {
 /* End toggle password */
 
 /* End login */
+
+/* Footer */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 0;
+    border-top: 1px solid var(--border-black);
+}
+/* End footer */
