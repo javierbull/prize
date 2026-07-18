@@ -405,7 +405,6 @@ body {
 
 .container-login--img {
     width: 100%;
-    min-height: 100%;
     background-image: url('../images/fondos/bg-login.png');
     background-repeat: no-repeat;
     background-position: center center;
