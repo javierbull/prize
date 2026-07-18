@@ -9,7 +9,7 @@
     }
 
     .container-login--img {
-        background-color: yellow;
+        /* background-color: yellow; */
         width: 100%;
         height: 100vw;
         background-image: url('../images/fondos/bg-login.png');
@@ -17,11 +17,12 @@
         background-position: center center;
         background-size: cover;
     }
-
     /* End form login */
 
     .footer-content {
-        
+        flex-direction: column-reverse;
+        gap: 2rem;
+        align-items: center;
     }
 }
 
