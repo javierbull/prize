@@ -29,6 +29,22 @@
 /* End tablet */
 
 /* Mobile */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .form-login {
+        .form-row {
+            flex-direction: column;
+            gap: .5rem;
+        }
+    }
+
+    .footer-content {
+        padding: 1.5rem .75rem;
+    }
+
+    .footer-info {
+        /* background-color: pink; */
+        flex-wrap: wrap;
+    }
+}
 
 /* End mobile*/
