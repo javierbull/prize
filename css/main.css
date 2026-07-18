@@ -493,7 +493,18 @@ body {
     align-items: flex-start;
     padding: 2rem 0;
     border-top: 1px solid var(--border-black);
+    gap: 10rem;
+}
+
+.footer-info {
+    /* background-color: lavender; */
+    width: 100%;
+    display: flex;
     gap: 2.5rem;
+}
+
+.footer-column {
+    flex: 1;
 }
 
 .footer-list {
