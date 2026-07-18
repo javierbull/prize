@@ -524,3 +524,43 @@ body {
 }
 
 /* End footer */
+
+/* Modals */
+.modal-prize {
+    .modal-content {
+        border-radius: 1rem;
+        border: 1px solid var(--border-black); 
+    }
+
+    .modal-body {
+        padding: 1.5rem;
+
+        h1 {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .modal-footer {
+        padding: 1.5rem;
+
+        button {
+            margin: 0;
+            width: 100%;
+        }
+    }
+
+    .modal-dialog {
+        --bs-modal-width: 400px;
+    }
+}
+
+.modal-sm {
+    --bs-modal-width: 300px;
+}
+
+.modal-footer-btns-v {
+    flex-direction: column;
+    gap: .5rem;
+}
+
+/* End modals */
