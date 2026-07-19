@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear nueva contraseña</title>
+    <link rel="icon" href="images/logos/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- CSS FILES -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mq.css">
+</head>
+
+<body>
+    <main>
+        <div class="container container-base">
+            <div class="container-login--form">
+                <img src="images/logos/logo-rectangular.png" alt="Logo de empresa" class="logo-login">
+                <!-- <img src="images/logos/logo-cuadrado.png" alt="Logo de empresa" class="logo-login"> -->
+                <h1 class="headline_2">Crear una nueva contraseña</h1>
+                <form class="form-login">
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label for="user-doc-type" class="form-label">State</label>
+                            <select class="form-select" id="user-doc-type" required="">
+                                <option>DNI</option>
+                                <option>CE</option>
+                                <option>Pasaporte</option>
+                            </select>
+                        </div>
+                        <div class="form-group col">
+                            <label for="user-doc-number" class="form-label">Número</label>
+                            <input type="text" class="form-control" id="user-doc-number" aria-describedby="emailHelp">
+                            <div class="invalid-feedback">
+                                Ingreser un número de documento válido.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user-password" class="form-label">Contraseña</label>
+                        <div class="password-input-wrapper">
+                            <input type="password" class="form-control" id="user-password">
+                            <ion-icon name="eye-outline" id="toggle-password" class="toggle-password-icon"></ion-icon>
+                        </div>
+                        <div class="invalid-feedback">
+                            Ingrese una contraseña válida.
+                        </div>
+                    </div>
+
+
+                    <button type="submit" class="btn primary-btn">Iniciar sesión</button>
+
+                    <a href="#" class="primary-link" data-bs-toggle="modal" data-bs-target="#modalRecoverPassword">
+                        ¿Olvidaste tu contraseña?
+                    </a>
+                </form>
+            </div>
+        </div>
+
+        <footer class="footer-prize">
+            <div class="container">
+                <div class="footer-content">
+                    <img src="images/logos/logo-prize.svg" alt="">
+                    <div class="footer-info">
+                        <div class="footer-column">
+                            <h5 class="headline_5">Nosotros</h5>
+                            <ul class="footer-list">
+                                <li><a href="#" class="secondary-link">Acerca de Prize</a></li>
+                                <li><a href="#" class="secondary-link">Preguntas frecuentes</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h5 class="headline_5">Ayuda al cliente</h5>
+                            <ul class="footer-list">
+                                <li><a href="#" class="secondary-link">Términos y condiciones</a></li>
+                                <li><a href="#" class="secondary-link">Política de privacidad</a></li>
+                                <li><a href="#" class="secondary-link">Política de cambios y/o devoluciones</a></li>
+                                <li><a href="#" class="secondary-link">Política de protección de datos</a></li>
+                                <li><a href="#" class="secondary-link">Libro de reclamaciones</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h5 class="headline_5">¿Tienes alguna duda?</h5>
+                            <ul class="footer-list">
+                                <p>Escríbenos a nuestro whatsapp:<br>992 192 643</p>
+                                <p>Horarrio de atención:<br>Lunes a viernes de 9:30 AM a 6:30 PM</p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- MODALS -->
+        <!-- Modal Recuperar contraseña -->
+        <div class="modal fade modal-prize" id="modalRecoverPassword" tabindex="-1" aria-labelledby="modalRecoverPassword-title" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <h1 class="headline_3" id="modalRecoverPassword-title">¿Olvidaste tu contraseña?</h1>
+                        <p>
+                            Ingresa tu documento de identidad y te enviaremos un correo con un enlace de recuperación.
+                        </p>
+                        <div class="form-group col mb-0">
+                            <label for="user-doc-number-recover" class="form-label">Número de documento</label>
+                            <input type="text" class="form-control" id="user-doc-number-recover" aria-describedby="emailHelp">
+                            <div class="invalid-feedback">
+                                Ingreser un número de documento válido.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer modal-footer-btns-v">
+                        <button type="button" class="btn primary-btn" data-bs-target="#modalLinkSend" data-bs-toggle="modal">Enviar enlace</button>
+                        <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End modal recuperar contraseña -->
+
+        <!-- Modal enlace enviado -->
+        <div class="modal fade modal-prize" id="modalLinkSend" tabindex="-1" aria-labelledby="modalLinkSend-tittle" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <h1 class="headline_3" id="modalLinkSend-tittle">Enlace enviado</h1>
+                        <p>
+                            Te hemos enviado un enlace de recuperación al siguiente correo:
+                        </p>
+                        <p class="subhead_5 mb-0">
+                            jbu*******@gmail.com
+                        </p>
+                    </div>
+                    <div class="modal-footer modal-footer-btns-v">
+                        <button type="button" class="btn primary-btn" data-bs-dismiss="modal">Entendido</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End modal enlace enviado -->
+    </main>
+
+
+    <!-- Js-files -->
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

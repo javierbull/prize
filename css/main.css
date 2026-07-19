@@ -103,7 +103,7 @@
     --border-warning: var(--yellow-800);
     --border-info: var(--blue-800);
     --border-accent: var(--pink-800);
-    --border-black: var(--default-black);
+    --border-black: var(--gray-900);
     --btn-focus-shadow: 0, 0, 0;
 
     /* Brand Colors */
@@ -113,6 +113,10 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+main {
+    background-color: var(--bg-surface-secondary);
 }
 
 body {
@@ -493,12 +497,16 @@ body {
 /* End login */
 
 /* Footer */
+.footer-prize {
+    background-color: var(--bg-surface-primary);
+    border-top: 1px solid var(--border-black);
+}
+
 .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 2rem 0;
-    border-top: 1px solid var(--border-black);
     gap: 10rem;
 }
 
@@ -549,9 +557,9 @@ body {
         }
     }
 
-    /* .modal-dialog {
+    .modal-dialog {
         --bs-modal-width: 400px;
-    } */
+    }
 }
 
 .modal-footer-btns-v {
@@ -560,3 +568,11 @@ body {
 }
 
 /* End modals */
+
+/* Crear nueva contraseña */
+.container-base {
+    display: flex;
+    justify-content: center;
+    min-height: 95dvh;
+}
+/* End crear nueva contraseña */
