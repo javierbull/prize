@@ -101,12 +101,13 @@
             </div>
         </footer>
 
+        <!-- MODALS -->
         <!-- Modal Recuperar contraseña -->
-        <div class="modal fade modal-prize" id="modalRecoverPassword" tabindex="-1" aria-labelledby="modalTitleRecoverPassword" aria-hidden="true">
+        <div class="modal fade modal-prize" id="modalRecoverPassword" tabindex="-1" aria-labelledby="modalRecoverPassword-title" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-body text-center">
-                        <h1 class="headline_3" id="modalTitleRecoverPassword">¿Olvidaste tu contraseña?</h1>
+                        <h1 class="headline_3" id="modalRecoverPassword-title">¿Olvidaste tu contraseña?</h1>
                         <p>
                             Ingresa tu documento de identidad y te enviaremos un correo con un enlace de recuperación.
                         </p>
@@ -119,13 +120,34 @@
                         </div>
                     </div>
                     <div class="modal-footer modal-footer-btns-v">
-                        <button type="button" class="btn primary-btn">Enviar enlace</button>
+                        <button type="button" class="btn primary-btn" data-bs-target="#modalLinkSend" data-bs-toggle="modal">Enviar enlace</button>
                         <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
                     </div>
                 </div>
             </div>
         </div>
         <!-- End modal recuperar contraseña -->
+
+        <!-- Modal enlace enviado -->
+        <div class="modal fade modal-prize" id="modalLinkSend" tabindex="-1" aria-labelledby="modalLinkSend-tittle" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <h1 class="headline_3" id="modalLinkSend-tittle">Enlace enviado</h1>
+                        <p>
+                            Te hemos enviado un enlace de recuperación al siguiente correo:
+                        </p>
+                        <p class="subhead_5 mb-0">
+                            jbu*******@gmail.com
+                        </p>
+                    </div>
+                    <div class="modal-footer modal-footer-btns-v">
+                        <button type="button" class="btn primary-btn" data-bs-dismiss="modal">Entendido</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End modal enlace enviado -->
     </main>
 
 

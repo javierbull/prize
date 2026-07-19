@@ -107,7 +107,7 @@
     --btn-focus-shadow: 0, 0, 0;
 
     /* Brand Colors */
-    --bg-fill-brand: black;
+    --bg-fill-brand: #1C1D20;
     --text-brand: #FFFFFF;
 }
 
@@ -549,13 +549,9 @@ body {
         }
     }
 
-    .modal-dialog {
+    /* .modal-dialog {
         --bs-modal-width: 400px;
-    }
-}
-
-.modal-sm {
-    --bs-modal-width: 300px;
+    } */
 }
 
 .modal-footer-btns-v {
