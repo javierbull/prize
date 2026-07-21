@@ -484,15 +484,19 @@ body {
     right: 0.75rem;
     transform: translateY(-50%);
     font-size: 1.25rem;
-    color: #6c757d;
+    color: var(--text-secondary);
     cursor: pointer;
 }
 
 .toggle-password-icon:hover {
-    color: #343a40;
+    color: var(--text-primary);
 }
 
 /* End toggle password */
+
+.header-form {
+    text-align: center;
+}
 
 /* End login */
 
