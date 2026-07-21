@@ -492,6 +492,8 @@ body {
     color: var(--text-primary);
 }
 
+
+
 /* End toggle password */
 
 .header-form {
@@ -564,6 +566,11 @@ body {
     .modal-dialog {
         --bs-modal-width: 400px;
     }
+}
+
+.icon-modal {
+    color: var(--bg-fill-success);
+    font-size: 3.5rem;
 }
 
 .modal-footer-btns-v {
